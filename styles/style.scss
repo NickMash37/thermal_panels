@@ -9,6 +9,11 @@
     list-style-type: none;
 }
 
+@mixin hovered-link {
+    color: #efb841;
+    transition: color .3s ease-in-out;
+}
+
 // Common styles
 
 * {
@@ -68,6 +73,10 @@ a:visited {
             a {
                 @include standart-link();
                 color: #fff;
+
+                &:hover {
+                    @include hovered-link();
+                }
             }
         }
 
@@ -76,8 +85,27 @@ a:visited {
                 a {
                     @include standart-link();
                     color: #fff;
+
+                    &:hover {
+                        @include hovered-link()
+                    }
                 }
             }
         }
+    }
+}
+
+// Header styles end
+
+// Main styles start
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        height: 1080px;
+        width: 100%;
+        z-index: 0;
     }
 }

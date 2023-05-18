@@ -60,12 +60,30 @@ a:visited {
   list-style-type: none;
   color: #fff;
 }
+.header-menu__item a:hover {
+  color: #efb841;
+  transition: color 0.3s ease-in-out;
+}
 .header-menu__contacts span a {
   text-decoration: none;
   outline: none;
   border: none;
   list-style-type: none;
   color: #fff;
+}
+.header-menu__contacts span a:hover {
+  color: #efb841;
+  transition: color 0.3s ease-in-out;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main img {
+  height: 1080px;
+  width: 100%;
+  z-index: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
