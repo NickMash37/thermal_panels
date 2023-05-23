@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
 // Mixins
 
 @mixin standart-link {
@@ -12,6 +14,31 @@
 @mixin hovered-link {
     color: #efb841;
     transition: color .3s ease-in-out;
+    cursor: pointer;
+}
+
+@mixin button {
+    width: 200px;
+    height: 50px;
+    background: #3b873b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    &:hover {
+        background: #fff;
+        color: #3b873b;
+        transition: color, .2s ease-in-out;
+    }
+}
+
+@mixin description-text {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 // Common styles
@@ -20,7 +47,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Bitter', serif;
+    // font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    cursor: default;
 }
 
 .wrapper {
@@ -43,6 +72,7 @@ a:visited {
     background: #514e4e;
     padding: 20px 0;
     justify-content: space-around;
+    margin: 0;
 
     img {
         width: 200px;
@@ -70,9 +100,11 @@ a:visited {
             text-transform: uppercase;
             font-size: 20px;
             font-weight: 700;
+            
             a {
                 @include standart-link();
                 color: #fff;
+                font-family: 'Bitter', serif;
 
                 &:hover {
                     @include hovered-link();
@@ -104,8 +136,123 @@ main {
     flex-direction: column;
 
     img {
-        height: 1080px;
+        height: fit-content;
         width: 100%;
         z-index: 0;
     }
+}
+
+.main-image {
+    height: 880px;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+        width: 25%;
+        height: 350px;
+    }
+}
+
+.main-cart {
+    display: flex;
+    flex-direction: row;
+    background: #2e2c33;
+
+    &__item {
+        width: 25%;
+        padding: 100px 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+
+        &:hover {
+            background: #3b873b;
+
+            button {
+                border: 1px solid #fff;
+            }
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 26px;
+            align-self: center;
+            color: #fff;
+            padding-bottom: 50px;
+        }
+
+        p {
+            align-self: center;
+            padding: 30px 20px;
+            text-align: center;
+            height: 200px;
+            @include description-text();
+        }
+
+        button {
+            @include button();
+            align-self: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+    }
+}
+
+.main-advantage {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px 0;
+    height: fit-content;
+
+        h3 {
+            font-size: 34px;
+            font-family: 'Roboto';
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__item {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: fit-content;
+            margin: 0 auto;
+        
+            i {
+                color: #3b873b;
+                font-size: 50px;
+                margin-top: 50px;
+            }
+
+            h4 {
+                text-transform: uppercase;
+                font-size: 20px;
+                margin-top: 20px;
+                color: #868282;
+                font-family: 'Roboto';
+            }
+
+            p {
+                padding-top: 30px;
+                font-size: 14px;
+                font-family: 'Roboto';
+            }
+        }
 }
