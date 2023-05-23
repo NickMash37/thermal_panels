@@ -84,15 +84,15 @@ a:visited {
 main {
   display: flex;
   flex-direction: column;
-}
-main img {
-  height: fit-content;
-  width: 100%;
-  z-index: 0;
+  box-sizing: content-box;
 }
 
 .main-image {
   height: 880px;
+  width: 100%;
+}
+.main-image img {
+  width: 100%;
 }
 
 .main-info {
@@ -265,6 +265,9 @@ main img {
   background: #fff;
   color: #3b873b;
   transition: color, 0.2s ease-in-out;
+}
+.faq__img img {
+  width: 100%;
 }
 .faq-items {
   width: 50%;
