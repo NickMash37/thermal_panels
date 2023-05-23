@@ -53,7 +53,7 @@ a:visited {
   border: none;
   list-style-type: none;
   text-transform: uppercase;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 700;
 }
 .header-menu__item a {
@@ -84,15 +84,14 @@ a:visited {
 main {
   display: flex;
   flex-direction: column;
-  box-sizing: content-box;
 }
 
 .main-image {
-  height: 880px;
   width: 100%;
 }
 .main-image img {
   width: 100%;
+  height: auto;
 }
 
 .main-info {
@@ -126,7 +125,7 @@ main {
 }
 .main-cart__item h3 {
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.3em;
   align-self: center;
   color: #fff;
   padding-bottom: 50px;
@@ -328,7 +327,7 @@ main {
 }
 .usage-item h4 {
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 1.1em;
   padding: 20px 0;
   align-self: center;
 }
@@ -373,6 +372,8 @@ footer {
 
 .footer-content {
   display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
   width: 100%;
 }
 
