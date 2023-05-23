@@ -29,6 +29,9 @@ a:visited {
   padding: 20px 0;
   justify-content: space-around;
   margin: 0;
+  position: fixed;
+  top: 0;
+  z-index: 5;
 }
 .header img {
   width: 200px;
