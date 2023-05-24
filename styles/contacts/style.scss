@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+// Mixins
+
+@mixin standart-link {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    list-style-type: none;
+}
+
+@mixin hovered-link {
+    color: #efb841;
+    transition: color .3s ease-in-out;
+    cursor: pointer;
+}
+
+@mixin button {
+    width: 200px;
+    height: 50px;
+    background: #3b873b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    &:hover {
+        background: #fff;
+        color: #3b873b;
+        transition: color, .2s ease-in-out;
+    }
+}
+
+@mixin description-text {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@mixin title_h3 {
+    text-transform: uppercase;
+    font-size: 34px;
+    align-self: center;
+    color: #514e4e;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+// Common styles
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    cursor: default;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a:active,
+a:visited {
+    @include standart-link();
+    color: inherit;
+}
+
+
+// Header styles start
+
+.header {
+    display: flex;
+    width: 100%;
+    background: #514e4e;
+    padding: 20px 0;
+    justify-content: space-around;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+
+    img {
+        width: 200px;
+        height: 50px;
+    }
+
+    &-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        justify-content: space-around;
+
+        &__items {
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                align-items: center;
+            }
+        }
+
+        &__item {
+            @include standart-link();
+            text-transform: uppercase;
+            font-size: 1em;
+            font-weight: 700;
+            position: relative;
+
+            &:hover {
+                .dropdown {
+                    display: block;
+                    position: absolute;
+                    background: #514e4e;
+                    top: 100%;
+                    padding: 40px 10px 20px;
+                    min-width: 200px;
+                    text-align: left;
+                    left: -20px;
+                    border-radius: 10px;
+                    z-index: 3;
+
+                    &-item {
+                        display: block;
+                        background-color: #514e4e;
+                        text-decoration: none;
+                        padding: 20px 0;
+                        cursor: pointer;
+                        z-index: 3;
+                        color: #fff;
+                        font-size: 0.9em;
+
+                        &:last-child {
+                            padding-bottom: 10px;
+                        }
+
+                        &:hover {
+                            color: #efb841;
+                            transition: background-color, .2s ease-in-out;
+                        }
+                    }
+                }
+            }
+            
+            a {
+                @include standart-link();
+                color: #fff;
+
+                &:hover {
+                    @include hovered-link();
+                }
+            }
+        }
+
+        &__contacts {
+            span {
+                a {
+                    @include standart-link();
+                    color: #fff;
+
+                    &:hover {
+                        @include hovered-link()
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dropdown {
+    list-style-type: none;
+    display: none;
+
+    &-item {
+        display: none;
+    }
+}
+
+// Header styles end
+
+// Main styles
+
+.main{
+    width: 100%;
+    display: flex;
+    padding: 110px 0;
+
+    iframe {
+        width: 35%;
+    }
+
+    .main-contacts {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 200px 40px;
+
+        span {
+            font-size: 1em;
+            text-transform: uppercase;
+            text-align: center;
+
+            a {
+                @include standart-link();
+
+                &:hover {
+                    @include hovered-link();
+                }
+            }
+        }
+    }
+
+    .main-form {
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+// Main styles end
+
+
+// Footer styles
+
+footer {
+    width: 100%;
+    position: inherit;
+    bottom: 0;
+    left: 0;
+    height: 300px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    width: 100%;
+}
+
+.footer-contacts {
+    margin-top: 40px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+
+    h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 16px;
+
+        a {
+            @include standart-link();
+            font-weight: 700;
+            
+            &:hover {
+                @include hovered-link();
+            }
+        }
+
+        i {
+            color: #514e4e;
+            margin-right: 5px;
+        }
+    }
+}
+
+.footer-menu {
+    width: 60%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__item {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+            text-transform: uppercase;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        ul {
+            li {
+                text-decoration:  none;
+                list-style-type: none;
+                margin-bottom: 20px;
+
+                a {
+                    @include standart-link();
+                    color: #efb841;
+
+                    &:hover {
+                        @include hovered-link();
+                        color: #3b873b;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// Footer styles end
