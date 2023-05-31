@@ -449,6 +449,11 @@ main {
             margin-bottom: 40px;
             align-self: center;
 
+            a {
+                @include standart-link();
+                cursor: pointer;
+            }
+
             &:hover {
                 background: #000;
                 color: #fff;

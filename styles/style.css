@@ -400,6 +400,13 @@ main {
   color: #3b873b;
   transition: color, 0.2s ease-in-out;
 }
+.usage-item button a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  list-style-type: none;
+  cursor: pointer;
+}
 .usage-item button:hover {
   background: #000;
   color: #fff;
