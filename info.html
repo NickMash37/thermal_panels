@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/calculator/style.css">
+    <link rel="stylesheet" href="styles/info/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <title>Онлайн-калькулятор</title>
+    <title>Информация</title>
 </head>
 <body>
+    
 
     <!-- Header start -->
 
@@ -30,10 +31,10 @@
                         </li>
                         <li class="header-menu__item"><a href="/info.html">Информация</a>
                             <ul class="dropdown">
-                                <li class="dropdown-item"><a href="external.html">Внешняя отделка</a></li>
-                                <li class="dropdown-item"><a href="internal.html">Внутрення отделка</a></li>
-                                <li class="dropdown-item"><a href="base.html">Отделка цоколя</a></li>
-                                <li class="dropdown-item"><a href="wooden.html">Отделка деревянного дома</a></li>
+                                <li class="dropdown-item"><a href="/articles/external.html">Внешняя отделка</a></li>
+                                <li class="dropdown-item"><a href="/articles/internal.html">Внутрення отделка</a></li>
+                                <li class="dropdown-item"><a href="/articles/base.html">Отделка цоколя</a></li>
+                                <li class="dropdown-item"><a href="/articles/wooden.html">Отделка деревянного дома</a></li>
                             </ul>
                         </li>
                         <li class="header-menu__item"><a href="/gallery.html">Галерея</a></li>
@@ -58,64 +59,58 @@
     <!-- Header end -->
 
     <!-- Main section -->
-    
+
     <main class="wrapper">
-        <div class="instruction">
-            <h4>Инструкция по использованию онлайн-калькулятора</h4>
-            <p> - Введите данные по площади, которую необходимо покрыть термопанелями;</p>
-            <p> - Добавьте длину и ширину (в см) панелей, а также их стоимость в зависимости от вашего выбора. Таблица по размерам и ценам находится ниже;</p>
-            <p> - Нажмите кнопку "Получить расчёт", когда данные будут введены.</p>
-            <p>Расчёт носит ознакомительный характер и не является окончательной стоимостью работ. Для получения точных сумм обратитесь к менеджеру, заполнив форму ниже.</p>
+        <div class="main-info">
+            <h4>Статьи и новости</h4>
+            <div class="main-info__cta">
+                <div class="cta-text">
+                    <p>Наша команда постоянно работает над улучшением технологии производства и расширяет области применения наших материалов.</p>
+                    <p>В этом разделе публикуются интересные статьи на тему отделки и утепления, а также важные новости.</p>
+                    <p>Оставьте свои контактные данные, чтобы получить больше информации от наших менеджеров.</p>
+                </div>
+                <script data-b24-form="click/18/aa5dcq" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b24058702/crm/form/loader_18.js');</script>
+            </div>
         </div>
 
-        <div class="table">
-            <table>
-                <tr>
-                    <td>Вид термопанели</td>
-                    <td>Длина (см)</td>
-                    <td>Ширина (см)</td>
-                    <td>Цена (руб)</td>
-                </tr>
-                <tr>
-                    <td>Стандарт</td>
-                    <td>97</td>
-                    <td>57</td>
-                    <td>40мм - 1300 <br>
-                        50мм - 1400 <br>
-                        70мм - 1600 <br>
-                        100мм - 1900</td>
-                </tr>
-                <tr>
-                    <td>Под кирпич</td>
-                    <td>88</td>
-                    <td>57</td>
-                    <td>40мм - 1700 <br>
-                        50мм - 1800 <br>
-                        70мм - 2000 <br>
-                        100мм - 2300</td>
-                </tr>
-                <tr>
-                    <td>Кирпич на сетке</td>
-                    <td>100</td>
-                    <td>60</td>
-                    <td>1000</td>
-                </tr>
-            </table>
+        <div class="articles">
+            <div class="article">
+                <img src="img/info/base.jpg" alt="">
+                <div class="articles-text">
+                    <h4>Отделка цоколя термопанелями</h4>
+                    <p>Цокольные термопанели  - эффективный и доступный способ утепления зданий. Изготовлены они из лучшего по теплоизоляционным свойствам материала - пенополиуретан.</p>
+                </div>
+                <button><a href="base.html">Читать</a></button>
+            </div>
+            <div class="article">
+                <img src="img/info/external.jpg" alt="">
+                <div class="articles-text">
+                    <h4>Термопанели для наружной отделки</h4>
+                    <p>Мы производим высококачественные фасадные термопанели под клинкерный кирпич на основе мраморной крошки. Это не только быстрое утепление без лишних хлопот, но и экономия средств и времени. Панели имеют высокую износостойкость. Легко монтируется с помощью клей-пены и скрытого крепления на дюбеля.</p>
+                </div>
+                <button><a href="external.html">Читать</a></button>
+            </div>
+            <div class="article">
+                <img src="img/info/internal.jpg" alt="">
+                <div class="articles-text">
+                    <h4>Термопанели для внутренней отделки</h4>
+                    <p>Термопанели очень хороший материал для внутренних работ, вы одновременно утепляете и делаете финишную отделку вашего помещения. Идеальный вариант для прихожей или балкона.</p>
+                </div>
+                <button><a href="internal.html">Читать</a></button>
+            </div>
+            <div class="article">
+                <img src="img/info/wooden-house.jpg" alt="">
+                <div class="articles-text">
+                    <h4>Термопанели для отделки деревянного дома</h4>
+                    <p>Термопанели на деревянный дом в основном крепятся на заранее собранный каркас, если стены идеально ровные то можно обойтись и без него.</p>
+                </div>
+                <button><a href="wooden.html">Читать</a></button>
+            </div>
         </div>
-
-        <div class="calculator">
-            <!-- BEGIN SCALCULATOR.RU CODE -->
-            <script async type="text/javascript" src="https://scalculator.ru/api/script.js?<?=time()?>"></script>
-            <a href="https://scalculator.ru" id="_sc_wd_15541" class="_sc_wd_container" style="display:block;background-color:#f4f4f4;text-align:center;padding:20px;"><img src="https://scalculator.ru/api/img_loading.svg" style="display:block;margin:auto;">scalculator.ru</a>
-            <script type="text/javascript">
-        (function(){var init = function(){myCompanyApi.button({apiId:15541,containerId:'_sc_wd_15541'});};
-            if(typeof myCompanyApi!=='undefined'){init();}else{(myCompanyApiInitCallbacks = window.myCompanyApiInitCallbacks ||[]).push(init);}})();
-            </script>
-            <!-- END SCALCULATOR.RU CODE -->
-        </div>
-
     </main>
 
+
+    <!-- Main section end -->
 
     <!-- Footer -->
 
@@ -157,6 +152,7 @@
     </footer>
 
 <!-- Footer end -->
+
 
 </body>
 </html>

@@ -250,6 +250,9 @@ a:visited {
   gap: 10px;
   margin-bottom: 50px;
 }
+.scheme-desc__item h4 {
+  width: 80%;
+}
 .scheme-desc__item p {
   color: #3b873b;
   border: 2px solid #3b873b;
@@ -384,6 +387,21 @@ a:visited {
 .info-main__text button a:hover {
   background: #3b873b;
   color: #fff;
+}
+
+.brick-grid__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.brick-grid__text .brick-grid__item {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
 }
 
 .technical {

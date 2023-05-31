@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  cursor: default;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a:active,
+a:visited {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  list-style-type: none;
+  color: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  background: #514e4e;
+  padding: 20px 0;
+  justify-content: space-around;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+.header img {
+  width: 200px;
+  height: 50px;
+}
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  justify-content: space-around;
+}
+.header-menu__items ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+.header-menu__item {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  position: relative;
+}
+.header-menu__item:hover .dropdown {
+  display: block;
+  position: absolute;
+  background: #514e4e;
+  top: 100%;
+  padding: 40px 10px 20px;
+  min-width: 200px;
+  text-align: left;
+  left: -20px;
+  border-radius: 10px;
+  z-index: 3;
+}
+.header-menu__item:hover .dropdown-item {
+  display: block;
+  background-color: #514e4e;
+  text-decoration: none;
+  padding: 20px 0;
+  cursor: pointer;
+  z-index: 3;
+  color: #fff;
+  font-size: 0.9em;
+}
+.header-menu__item:hover .dropdown-item:last-child {
+  padding-bottom: 10px;
+}
+.header-menu__item:hover .dropdown-item:hover {
+  color: #efb841;
+  transition: background-color, 0.2s ease-in-out;
+}
+.header-menu__item a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  list-style-type: none;
+  color: #fff;
+}
+.header-menu__item a:hover {
+  color: #efb841;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.header-menu__contacts span a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  list-style-type: none;
+  color: #fff;
+}
+.header-menu__contacts span a:hover {
+  color: #efb841;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.dropdown {
+  list-style-type: none;
+  display: none;
+}
+.dropdown-item {
+  display: none;
+}
+
+main {
+  margin-top: 180px;
+  width: 100%;
+  text-align: center;
+}
+main h4 {
+  font-size: 2.8em;
+  text-transform: uppercase;
+}
+
+.main-articles {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+}
+.main-articles .article {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 50px auto;
+}
+.main-articles .article h4 {
+  font-size: 1.5em;
+  width: 100%;
+}
+.main-articles .article p {
+  width: 90%;
+  margin: 20px 0;
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.main-articles .article ul {
+  margin-top: 40px;
+  list-style: disc;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main-articles .article ul li {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 0.5em;
+  margin-bottom: 50px;
+}
+
+.slider-header {
+  font-size: 1.5em;
+  margin: 40px auto;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.slider-item__text {
+  background: #3b873b;
+  color: #fff;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.slider-item__text h5 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2em;
+}
+.slider-item__text p {
+  font-size: 0.9em;
+  font-weight: 300;
+  text-align: center;
+  padding: 10px;
+}
+.slider-item__text button {
+  width: 200px;
+  height: 50px;
+  background: #3b873b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  margin: 10px 0;
+}
+.slider-item__text button:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #3b873b;
+  transition: color, 0.2s ease-in-out;
+}
+.slider-item__text button a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.owl-nav {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin: 20px auto;
+  width: 15%;
+}
+.owl-nav button {
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+.owl-nav button span {
+  width: 100px;
+  align-self: center;
+  font-size: 80px;
+  color: #3b873b;
+  cursor: pointer;
+}
+.owl-nav button span:hover {
+  color: #275d27;
+}
+
+.cta {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+.cta p {
+  width: 60%;
+}
+
+footer {
+  width: 100%;
+  position: inherit;
+  bottom: 0;
+  left: 0;
+  height: 300px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  width: 100%;
+}
+
+.footer-contacts {
+  margin-top: 40px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+.footer-contacts h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.footer-contacts p {
+  font-size: 16px;
+}
+.footer-contacts p a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  list-style-type: none;
+  font-weight: 700;
+}
+.footer-contacts p a:hover {
+  color: #efb841;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.footer-contacts p i {
+  color: #514e4e;
+  margin-right: 5px;
+}
+
+.footer-menu {
+  width: 60%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer-menu__item {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.footer-menu__item h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.footer-menu__item ul li {
+  text-decoration: none;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.footer-menu__item ul li a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  list-style-type: none;
+  color: #efb841;
+}
+.footer-menu__item ul li a:hover {
+  color: #efb841;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+  color: #3b873b;
+}
+
+/*# sourceMappingURL=base.css.map */
