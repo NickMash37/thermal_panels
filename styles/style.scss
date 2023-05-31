@@ -261,9 +261,14 @@ main {
             font-weight: 700;
             color: #fff;
 
+            &:hover {
+                background: #3b873b
+            }
+
             a {
                 @include standart-link();
                 cursor: pointer;
+                color: #fff;
             }
         }
     }
@@ -458,6 +463,7 @@ main {
 
             a {
                 @include standart-link();
+                color: #fff;
                 cursor: pointer;
             }
 

@@ -205,12 +205,16 @@ main {
   color: #3b873b;
   transition: color, 0.2s ease-in-out;
 }
+.main-cart__item button:hover {
+  background: #3b873b;
+}
 .main-cart__item button a {
   text-decoration: none;
   outline: none;
   border: none;
   list-style-type: none;
   cursor: pointer;
+  color: #fff;
 }
 
 .main-advantage {
@@ -414,6 +418,7 @@ main {
   outline: none;
   border: none;
   list-style-type: none;
+  color: #fff;
   cursor: pointer;
 }
 .usage-item button:hover {
