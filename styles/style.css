@@ -161,6 +161,7 @@ main {
   flex-direction: column;
   height: 100%;
   justify-content: space-around;
+  color: #fff;
 }
 .main-cart__item:hover {
   background: #3b873b;
@@ -197,11 +198,19 @@ main {
   align-self: center;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  color: #fff;
 }
 .main-cart__item button:hover {
   background: #fff;
   color: #3b873b;
   transition: color, 0.2s ease-in-out;
+}
+.main-cart__item button a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  list-style-type: none;
+  cursor: pointer;
 }
 
 .main-advantage {

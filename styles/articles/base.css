@@ -228,9 +228,16 @@ h4 {
   color: #3b873b;
   transition: color, 0.2s ease-in-out;
 }
+.slider-item__text button:hover {
+  background: #275d27;
+}
 .slider-item__text button a {
   text-decoration: none;
   cursor: pointer;
+  color: #fff;
+}
+.slider-item__text button a:hover {
+  color: #fff;
 }
 
 .owl-nav {

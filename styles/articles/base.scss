@@ -290,9 +290,18 @@ h4 {
             border: 1px solid #fff;
             margin: 10px 0;
 
+            &:hover {
+                background: #275d27;
+            }
+
             a {
                 text-decoration: none;
                 cursor: pointer;
+                color: #fff;
+
+                &:hover {
+                    color: #fff;
+                }
             }
         }
     }
