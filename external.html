@@ -13,11 +13,12 @@
 </head>
 <body>
 
-    <!-- Header start -->
+     <!-- Header start -->
 
-    <header>
+     <header>
         <div class="header">
-            <a href="index.html"><img src="img/logo/flesto-white.png" alt="Logo"></a>
+            <a href="index.html"><img src="img/logo/flesto-white.png" alt="Logo" class="logo"></a>
+            <img src="img/menu-bar.png" alt="" class="burger">
             <div class="header-menu">
                 <div class="header-menu__items">
                     <ul>
@@ -53,10 +54,42 @@
                     <span><a href="tel:+79009098215">+7(900)909-82-15</a></span>
                 </div>
             </div>
+
+            <div class="mobile-menu hidden">
+                <ul class="first-level-menu">
+                    <li class="mobile-item"><a href="index.html">Главная</a></li>
+                    <li class="mobile-item"><a href="#">Наша продукция<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="second-level-menu">
+                            <li><a href="standart.html">Термопанели стандарт</a></li>
+                            <li><a href="brick.html">Термопанели под кирпич</a></li>
+                            <li><a href="brick-grid.html">Кирпич на сетке</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-item"><a href="#">Информация<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="second-level-menu">
+                            <li><a href="external.html">Внешняя отделка</a></li>
+                            <li><a href="internal.html">Внутренняя отделка</a></li>
+                            <li><a href="base.html">Отделка цоколя</a></li>
+                            <li><a href="wooden.html">Отделка деревянного дома</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-item"><a href="gallery.html">Галерея</a></li>
+                    <li class="mobile-item"><a href="#">Доп.услуги<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="second-level-menu">
+                            <li><a href="services.html">Визуализация</a></li>
+                            <li><a href="services.html">Монтаж</a></li>
+                            <li><a href="services.html">Шеф-монтаж</a></li>
+                            <li><a href="calculator.html">Онлайн-калькулятор</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-item"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
     <!-- Header end -->
+
 
     <!-- Main section -->
 
@@ -246,6 +279,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="owl.carousel.min.js"></script>
 <script src="slider.js"></script>
+<script src="script.js"></script>
     
 </body>
 </html>

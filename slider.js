@@ -1,12 +1,20 @@
 jQuery(document).ready(($) => {
     $('.slider').owlCarousel({
-        items: 5,
+        items: 4,
         margin: 10,
         nav: true,
         loop: true,
         dots: true,
         responsive: {
-            items: 2
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
         }
     });
 })

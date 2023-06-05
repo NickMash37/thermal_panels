@@ -1,0 +1,176 @@
+.burger {
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .mobile-menu {
+    display: flex;
+    position: fixed;
+    margin: 70px auto;
+    background: #514e4e;
+    width: 100%;
+  }
+  .mobile-menu .first-level-menu {
+    width: 100%;
+    display: block;
+    position: relative;
+    left: 50px;
+    font-size: 1.2em;
+    list-style-type: none;
+  }
+  .mobile-menu .first-level-menu a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mobile-menu .first-level-menu li {
+    list-style: none;
+  }
+  .mobile-menu .first-level-menu li:last-child {
+    padding-bottom: 50px;
+  }
+  .mobile-menu .second-level-menu {
+    display: block;
+    position: relative;
+    left: 50%;
+    width: 50%;
+    background: #514e4e;
+  }
+  .mobile-menu .second-level-menu li {
+    font-size: 0.7em;
+    margin: 10px 0;
+  }
+  .header {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 50px;
+  }
+  .header-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    padding: 100px 0;
+    background: #514e4e;
+  }
+}
+@media screen and (max-width: 810px) {
+  .footer-content {
+    gap: 40px;
+  }
+  .footer-contacts h4 {
+    font-size: 1em;
+  }
+  .footer-contacts p {
+    font-size: 0.8em;
+  }
+  .footer-menu__item h4 {
+    font-size: 1em;
+  }
+  .footer-menu__item ul li {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 600px) {
+  * {
+    overflow-x: hidden;
+  }
+  .active-link {
+    color: #efb841 !important;
+  }
+  .header {
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+  }
+  .header .logo {
+    width: 50%;
+    height: 50%;
+  }
+  .header .burger {
+    width: 20%;
+    height: 20%;
+  }
+  .mobile-item i {
+    color: #fff;
+    font-size: 0.6em;
+    margin-left: 10px;
+    text-align: center;
+  }
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    margin: 70px auto;
+    background: #514e4e;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  .mobile-menu .first-level-menu {
+    width: 100%;
+    display: block;
+    position: relative;
+    left: 50px;
+    font-size: 1.2em;
+    list-style-type: none;
+  }
+  .mobile-menu .first-level-menu a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mobile-menu .first-level-menu li {
+    list-style: none;
+    padding: 10px 0;
+    height: 100%;
+  }
+  .mobile-menu .second-level-menu {
+    display: none;
+    position: relative;
+    left: 5px;
+    width: 80%;
+    background: #514e4e;
+    height: fit-content;
+    padding: 10px 0;
+  }
+  .mobile-menu .second-level-menu li {
+    font-size: 0.8em;
+  }
+  .footer-content {
+    width: 100%;
+    padding: 0;
+  }
+  .footer-contacts {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .footer-contacts p {
+    font-size: 0.8em;
+  }
+  .footer-menu {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=common.css.map */
