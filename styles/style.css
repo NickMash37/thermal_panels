@@ -526,25 +526,26 @@ footer {
   .burger {
     display: block;
     cursor: pointer;
+    width: 50px !important;
   }
   .mobile-menu {
     display: flex;
     position: fixed;
-    margin: 70px auto;
+    margin: 60px auto;
     background: #514e4e;
     width: 100%;
     height: 100%;
   }
   .mobile-menu .first-level-menu {
     width: 100%;
-    height: 100%;
     display: block;
-    position: fixed;
+    position: absolute;
     overflow: scroll;
     left: 50px;
     font-size: 1.2em;
     list-style-type: none;
     padding-bottom: 100px;
+    max-height: 100%;
   }
   .mobile-menu .first-level-menu a {
     text-transform: uppercase;
@@ -554,6 +555,7 @@ footer {
   }
   .mobile-menu .first-level-menu li {
     list-style: none;
+    margin: 10px 0;
   }
   .mobile-menu .first-level-menu li:last-child {
     padding-bottom: 50px;
@@ -573,8 +575,9 @@ footer {
   .header {
     width: 100%;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-around;
     gap: 50px;
+    padding: 10px;
   }
   .header-menu {
     display: none;
@@ -584,92 +587,47 @@ footer {
     padding: 100px 0;
     background: #514e4e;
   }
-  .main-info img {
+  .main-cart {
+    width: 100%;
     height: 100%;
   }
   .main-cart__item {
-    height: 600px;
-    text-align: center;
-    display: flex;
+    width: 25%;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    padding: 20px 0;
   }
   .main-cart__item h3 {
     font-size: 1em;
+    text-align: center;
+    height: 50px;
   }
   .main-cart__item p {
-    height: 100%;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
   }
   .main-cart__item button {
     width: 80%;
   }
-}
-@media screen and (max-width: 810px) {
-  .main-cart__item {
-    justify-content: space-between;
-    padding: 50px 0;
-  }
-  .main-cart p {
-    font-size: 1em;
-  }
-  .main-cart button {
-    width: 80%;
-    font-size: 1em;
-  }
-  .faq {
-    width: 80%;
-  }
-  .faq-info {
-    width: 100%;
-  }
-  .faq-info .faq__img {
-    width: 40%;
-  }
-  .faq-info .faq__img p {
-    font-size: 1em;
-  }
-  .faq-info .faq__img button {
-    width: 100%;
-    height: 50px;
-    font-size: 0.7em;
-  }
-  .faq-info .faq-items {
-    width: 90%;
-  }
-  .faq-info .faq-items h4 {
-    font-size: 1em;
-  }
-  .faq-info .faq-items p {
-    font-size: 0.8em;
-  }
-  .main-usage h3 {
-    font-size: 1.2em;
+  .usage {
+    height: auto;
   }
   .usage-item {
-    display: flex;
-    justify-content: space-between;
+    height: auto;
   }
   .usage-item h4 {
-    font-size: 0.9em;
-  }
-  .footer-content {
-    gap: 40px;
-  }
-  .footer-contacts h4 {
     font-size: 1em;
+    height: 50px;
   }
-  .footer-contacts p {
-    font-size: 0.8em;
-  }
-  .footer-menu__item h4 {
-    font-size: 1em;
-  }
-  .footer-menu__item ul li {
-    font-size: 0.8em;
+  .b24-form-click-btn-wrapper button {
+    width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
+  .burger {
+    height: 100%;
+  }
   * {
     overflow-x: hidden;
   }
@@ -707,7 +665,6 @@ footer {
     width: 100%;
     top: 0;
     left: 0;
-    height: 100%;
   }
   .mobile-menu .first-level-menu {
     width: 100%;
@@ -716,6 +673,7 @@ footer {
     left: 50px;
     font-size: 1.2em;
     list-style-type: none;
+    min-height: 700px;
   }
   .mobile-menu .first-level-menu a {
     text-transform: uppercase;
@@ -785,7 +743,7 @@ footer {
     padding: 10px 0;
   }
   .faq {
-    width: 100%;
+    width: 90%;
     display: flex;
   }
   .faq h3 {
@@ -808,8 +766,8 @@ footer {
   .faq__img img, .faq__img p {
     display: none;
   }
-  .faq__img button {
-    width: 10%;
+  .faq__img div button {
+    width: 100%;
   }
   .main-usage h3 {
     font-size: 0.9em;

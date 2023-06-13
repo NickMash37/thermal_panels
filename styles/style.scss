@@ -581,30 +581,31 @@ footer {
 
 // Media queries
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px){
     .burger {
         display: block;
         cursor: pointer;
+        width: 50px !important;
     }
 
     .mobile-menu {
         display: flex;
         position: fixed;
-        margin: 70px auto;
+        margin: 60px auto;
         background: #514e4e;
         width: 100%;
         height: 100%;
 
         .first-level-menu {
             width: 100%;
-            height: 100%;
             display: block;
-            position: fixed;
+            position: absolute;
             overflow: scroll;
             left: 50px;
             font-size: 1.2em;
             list-style-type: none;
             padding-bottom: 100px;
+            max-height: 100%;
 
             a {
                 text-transform: uppercase;
@@ -615,6 +616,7 @@ footer {
 
             li {
                 list-style: none;
+                margin: 10px 0;
             }
 
             li:last-child {
@@ -640,8 +642,9 @@ footer {
     .header {
         width: 100%;
         margin: 0 auto;
-        justify-content: center;
+        justify-content: space-around;
         gap: 50px;
+        padding: 10px;
 
         &-menu {
             display: none;
@@ -653,130 +656,61 @@ footer {
         }
     }
 
-    .main-info {
-        img {
-            height: 100%;
-        }
-    }
-    .main-cart__item {
-        height: 600px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-
-        h3 {
-            font-size: 1em;
-        }
-        
-        p {
-            height: 100%;
-        }
-
-        button {
-            width: 80%;
-        }
-    }
-}
-
-@media screen and (max-width: 810px) {
     .main-cart {
+        width: 100%;
+        height: 100%;
 
         &__item {
+            width: 25%;
+            flex-direction: column;
             justify-content: space-between;
-            padding: 50px 0;
-        }
+            padding: 20px 0;
 
-        p {
-            font-size: 1em;
-        }
-
-        button {
-            width: 80%;
-            font-size: 1em;
-        }
-    }
-
-    .faq {
-        width: 80%;
-
-        &-info {
-            width: 100%;
-
-            .faq__img {
-                width: 40%;
-
-                p {
-                    font-size: 1em;
-                }
-
-                button {
-                    width: 100%;
-                    height: 50px;
-                    font-size: 0.7em;
-                }
+            h3 {
+                font-size: 1em;
+                text-align: center;
+                height: 50px;
             }
 
-            .faq-items {
-                width: 90%;
+            p {
+                width: 100%;
+                height: 300px;
+                margin-bottom: 20px;
+            }
 
-                h4 {
-                    font-size: 1em;
-                }
-
-                p {
-                    font-size: 0.8em;
-                }
+            button {
+                width: 80%;
             }
         }
     }
 
-    .main-usage {
-        h3 {
-            font-size: 1.2em;
-        }
-    }
+    .usage {
+        height: auto;
 
-    .usage-item {
-        display: flex;
-        justify-content: space-between;
+        &-item {
+            height: auto;
 
-        h4 {
-            font-size: 0.9em;
-        }
-    }
-
-    .footer-content {
-        gap: 40px;
-    }
-
-    .footer-contacts {
-        h4 {
-            font-size: 1em;
-        }
-
-        p {
-            font-size: 0.8em;
-        }
-    }
-
-    .footer-menu {
-        &__item {
             h4 {
                 font-size: 1em;
-            }
-
-            ul {
-                li {
-                    font-size: 0.8em;
-                }
+                height: 50px;
             }
         }
     }
+
+    .b24-form-click-btn-wrapper {
+        button {
+            width: 100%;
+        }
+    }
+
 }
 
 @media screen and (max-width: 600px) {
+
+    .burger {
+        height: 100%;
+    }
+
     * {
         overflow-x: hidden;
     }
@@ -823,7 +757,6 @@ footer {
         width: 100%;
         top: 0;
         left: 0;
-        height: 100%;
 
         .first-level-menu {
             width: 100%;
@@ -832,6 +765,7 @@ footer {
             left: 50px;
             font-size: 1.2em;
             list-style-type: none;
+            min-height: 700px;
 
             a {
                 text-transform: uppercase;
@@ -919,7 +853,7 @@ footer {
     }
 
     .faq {
-        width: 100%;
+        width: 90%;
         display: flex;
 
         h3 {
@@ -949,8 +883,10 @@ footer {
             display: none;
         }
 
-        button {
-            width: 10%;
+        div {
+            button {
+                width: 100%;
+            }
         }
     }
 
