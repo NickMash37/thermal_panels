@@ -21,10 +21,3 @@ firstLevelMenuItem.forEach((item) => {
         })
     }
 })
-
-// firstLevelMenuItem.forEach((item, idx) => {
-//     console.log(item, idx)
-// })
-// secondLevelMenu.forEach((item, idx) => {
-//     console.log(item, idx)
-// })
