@@ -1,197 +1,289 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/calculator/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/calculator/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <title>Онлайн-калькулятор</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Header start -->
 
-     <!-- Header start -->
-
-     <header>
-        <div class="header">
-            <a href="index.html"><img src="img/logo/flesto-white.png" alt="Logo" class="logo"></a>
-            <img src="img/menu-bar.png" alt="" class="burger">
-            <div class="header-menu">
-                <div class="header-menu__items">
-                    <ul>
-                        <li class="header-menu__item"><a href="/index.html">Главная</a></li>
-                        <li class="header-menu__item"><a href="#">Наша продукция</a>
-                            <ul class="dropdown">
-                                <li class="dropdown-item"><a href="/standart.html">Термопанели стандарт</a></li>
-                                <li class="dropdown-item"><a href="/brick.html">Термопанели под кирпич</a></li>
-                                <li class="dropdown-item"><a href="/brick-grid.html">Кирпич на сетке</a></li>
-                            </ul>
-                        </li>
-                        <li class="header-menu__item"><a href="/info.html">Информация</a>
-                            <ul class="dropdown">
-                                <li class="dropdown-item"><a href="external.html">Внешняя отделка</a></li>
-                                <li class="dropdown-item"><a href="internal.html">Внутренняя отделка</a></li>
-                                <li class="dropdown-item"><a href="base.html">Отделка цоколя</a></li>
-                                <li class="dropdown-item"><a href="wooden.html">Отделка деревянного дома</a></li>
-                            </ul>
-                        </li>
-                        <li class="header-menu__item"><a href="/gallery.html">Галерея</a></li>
-                        <li class="header-menu__item"><a href="services.html">Доп.услуги</a>
-                            <ul class="dropdown">
-                                <li class="dropdown-item"><a href="services.html">Визуализация</a></li>
-                                <li class="dropdown-item"><a href="services.html">Монтаж</a></li>
-                                <li class="dropdown-item"><a href="services.html">Шеф-монтаж</a></li>
-                                <li class="dropdown-item"><a href="calculator.html">Онлайн-калькулятор</a></li>
-                            </ul>
-                        </li>
-                        <li class="header-menu__item"><a href="/contacts.html">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="header-menu__contacts">
-                    <span><a href="tel:+79264206337">+7(962)420-63-37</a></span>
-                </div>
-            </div>
-
-            <div class="mobile-menu hidden">
-                <ul class="first-level-menu">
-                    <li class="mobile-item"><a href="index.html">Главная</a></li>
-                    <li class="mobile-item"><a href="#">Наша продукция<i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="second-level-menu">
-                            <li><a href="standart.html">Термопанели стандарт</a></li>
-                            <li><a href="brick.html">Термопанели под кирпич</a></li>
-                            <li><a href="brick-grid.html">Кирпич на сетке</a></li>
-                        </ul>
-                    </li>
-                    <li class="mobile-item"><a href="#">Информация<i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="second-level-menu">
-                            <li><a href="external.html">Внешняя отделка</a></li>
-                            <li><a href="internal.html">Внутренняя отделка</a></li>
-                            <li><a href="base.html">Отделка цоколя</a></li>
-                            <li><a href="wooden.html">Отделка деревянного дома</a></li>
-                        </ul>
-                    </li>
-                    <li class="mobile-item"><a href="gallery.html">Галерея</a></li>
-                    <li class="mobile-item"><a href="#">Доп.услуги<i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="second-level-menu">
-                            <li><a href="services.html">Визуализация</a></li>
-                            <li><a href="services.html">Монтаж</a></li>
-                            <li><a href="services.html">Шеф-монтаж</a></li>
-                            <li><a href="calculator.html">Онлайн-калькулятор</a></li>
-                        </ul>
-                    </li>
-                    <li class="mobile-item"><a href="contacts.html">Контакты</a></li>
+    <header>
+      <div class="header">
+        <a href="index.html"
+          ><img src="img/logo/flesto-white.png" alt="Logo" class="logo"
+        /></a>
+        <img src="img/menu-bar.png" alt="" class="burger" />
+        <div class="header-menu">
+          <div class="header-menu__items">
+            <ul>
+              <li class="header-menu__item">
+                <a href="/index.html">Главная</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="#">Наша продукция</a>
+                <ul class="dropdown">
+                  <li class="dropdown-item">
+                    <a href="/standart.html">Термопанели стандарт</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="/brick.html">Термопанели под кирпич</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="/brick-grid.html">Кирпич на сетке</a>
+                  </li>
                 </ul>
-            </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="/info.html">Информация</a>
+                <ul class="dropdown">
+                  <li class="dropdown-item">
+                    <a href="external.html">Внешняя отделка</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="internal.html">Внутренняя отделка</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="base.html">Отделка цоколя</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="wooden.html">Отделка деревянного дома</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header-menu__item">
+                <a href="/gallery.html">Галерея</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="services.html">Доп.услуги</a>
+                <ul class="dropdown">
+                  <li class="dropdown-item">
+                    <a href="services.html">Визуализация</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="services.html">Монтаж</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="services.html">Шеф-монтаж</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="calculator.html">Онлайн-калькулятор</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header-menu__item">
+                <a href="/contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-menu__contacts">
+            <span><a href="tel:+79264206337">+7(962)420-63-37</a></span>
+          </div>
         </div>
+
+        <div class="mobile-menu hidden">
+          <ul class="first-level-menu">
+            <li class="mobile-item"><a href="index.html">Главная</a></li>
+            <li class="mobile-item">
+              <a href="#"
+                >Наша продукция<i class="fa-solid fa-caret-down"></i
+              ></a>
+              <ul class="second-level-menu">
+                <li><a href="standart.html">Термопанели стандарт</a></li>
+                <li><a href="brick.html">Термопанели под кирпич</a></li>
+                <li><a href="brick-grid.html">Кирпич на сетке</a></li>
+              </ul>
+            </li>
+            <li class="mobile-item">
+              <a href="#">Информация<i class="fa-solid fa-caret-down"></i></a>
+              <ul class="second-level-menu">
+                <li><a href="external.html">Внешняя отделка</a></li>
+                <li><a href="internal.html">Внутренняя отделка</a></li>
+                <li><a href="base.html">Отделка цоколя</a></li>
+                <li><a href="wooden.html">Отделка деревянного дома</a></li>
+              </ul>
+            </li>
+            <li class="mobile-item"><a href="gallery.html">Галерея</a></li>
+            <li class="mobile-item">
+              <a href="#">Доп.услуги<i class="fa-solid fa-caret-down"></i></a>
+              <ul class="second-level-menu">
+                <li><a href="services.html">Визуализация</a></li>
+                <li><a href="services.html">Монтаж</a></li>
+                <li><a href="services.html">Шеф-монтаж</a></li>
+                <li><a href="calculator.html">Онлайн-калькулятор</a></li>
+              </ul>
+            </li>
+            <li class="mobile-item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!-- Header end -->
 
-
     <!-- Main section -->
-    
+
     <main class="wrapper">
-        <div class="instruction">
-            <h4>Инструкция по использованию онлайн-калькулятора</h4>
-            <p> - Введите данные по площади, которую необходимо покрыть термопанелями;</p>
-            <p> - Добавьте длину и ширину (в см) панелей, а также их стоимость в зависимости от вашего выбора. Таблица по размерам и ценам находится ниже;</p>
-            <p> - Нажмите кнопку "Получить расчёт", когда данные будут введены.</p>
-            <p>Расчёт носит ознакомительный характер и не является окончательной стоимостью работ. Для получения точных сумм обратитесь к менеджеру, заполнив форму ниже.</p>
-        </div>
+      <div class="instruction">
+        <h4>Инструкция по использованию онлайн-калькулятора</h4>
+        <p>
+          - Введите данные по площади, которую необходимо покрыть термопанелями;
+        </p>
+        <p>
+          - Добавьте длину и ширину (в см) панелей, а также их стоимость в
+          зависимости от вашего выбора. Таблица по размерам и ценам находится
+          ниже;
+        </p>
+        <p>- Нажмите кнопку "Получить расчёт", когда данные будут введены.</p>
+        <p>
+          Расчёт носит ознакомительный характер и не является окончательной
+          стоимостью работ. Для получения точных сумм обратитесь к менеджеру,
+          заполнив форму ниже.
+        </p>
+      </div>
 
-        <div class="table">
-            <table>
-                <tr>
-                    <td>Вид термопанели</td>
-                    <td>Длина (см)</td>
-                    <td>Ширина (см)</td>
-                    <td>Цена (руб)</td>
-                </tr>
-                <tr>
-                    <td>Стандарт</td>
-                    <td>97</td>
-                    <td>57</td>
-                    <td>40мм - 1300 <br>
-                        50мм - 1400 <br>
-                        70мм - 1600 <br>
-                        100мм - 1900</td>
-                </tr>
-                <tr>
-                    <td>Под кирпич</td>
-                    <td>88</td>
-                    <td>57</td>
-                    <td>40мм - 1700 <br>
-                        50мм - 1800 <br>
-                        70мм - 2000 <br>
-                        100мм - 2300</td>
-                </tr>
-                <tr>
-                    <td>Кирпич на сетке</td>
-                    <td>100</td>
-                    <td>60</td>
-                    <td>1000</td>
-                </tr>
-            </table>
-        </div>
+      <div class="table">
+        <table>
+          <tr>
+            <td>Вид термопанели</td>
+            <td>Длина (см)</td>
+            <td>Ширина (см)</td>
+            <td>Цена (руб)</td>
+          </tr>
+          <tr>
+            <td>Стандарт</td>
+            <td>97</td>
+            <td>57</td>
+            <td>
+              40мм - 1300 <br />
+              50мм - 1400 <br />
+              70мм - 1600 <br />
+              100мм - 1900
+            </td>
+          </tr>
+          <tr>
+            <td>Под кирпич</td>
+            <td>88</td>
+            <td>57</td>
+            <td>
+              40мм - 1700 <br />
+              50мм - 1800 <br />
+              70мм - 2000 <br />
+              100мм - 2300
+            </td>
+          </tr>
+          <tr>
+            <td>Кирпич на сетке</td>
+            <td>100</td>
+            <td>60</td>
+            <td>1000</td>
+          </tr>
+        </table>
+      </div>
 
-        <div class="calculator">
-            <!-- BEGIN SCALCULATOR.RU CODE -->
-            <script async type="text/javascript" src="https://scalculator.ru/api/script.js?<?=time()?>"></script>
-            <a href="https://scalculator.ru" id="_sc_wd_15541" class="_sc_wd_container" style="display:block;background-color:#f4f4f4;text-align:center;padding:20px;"><img src="https://scalculator.ru/api/img_loading.svg" style="display:block;margin:auto;">scalculator.ru</a>
-            <script type="text/javascript">
-        (function(){var init = function(){myCompanyApi.button({apiId:15541,containerId:'_sc_wd_15541'});};
-            if(typeof myCompanyApi!=='undefined'){init();}else{(myCompanyApiInitCallbacks = window.myCompanyApiInitCallbacks ||[]).push(init);}})();
-            </script>
-            <!-- END SCALCULATOR.RU CODE -->
-        </div>
-
+      <div class="calculator">
+        <!-- BEGIN SCALCULATOR.RU CODE -->
+        <script
+          async
+          type="text/javascript"
+          src="https://scalculator.ru/api/script.js?<?=time()?>"
+        ></script>
+        <a
+          href="https://scalculator.ru"
+          id="_sc_wd_15566"
+          class="_sc_wd_container"
+          style="
+            display: block;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+          "
+          ><img
+            src="https://scalculator.ru/api/img_loading.svg"
+            style="display: block; margin: auto"
+          />scalculator.ru</a
+        >
+        <script type="text/javascript">
+          (function () {
+            var init = function () {
+              myCompanyApi.button({
+                apiId: 15566,
+                containerId: "_sc_wd_15566",
+              });
+            };
+            if (typeof myCompanyApi !== "undefined") {
+              init();
+            } else {
+              (myCompanyApiInitCallbacks =
+                window.myCompanyApiInitCallbacks || []).push(init);
+            }
+          })();
+        </script>
+        <!-- END SCALCULATOR.RU CODE -->
+      </div>
     </main>
-
 
     <!-- Footer -->
 
     <footer>
-        <div class="wrapper footer-content">
-            <div class="footer-contacts">
-                <h4>Контакты</h4>
-                <p><i class="fa-solid fa-house"></i> г. Ставрополь, ул. Заводская, 11, этаж 2, офис 14</p>
-                <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:info@26ferrum.ru">info@26ferrum.ru</a></p>
-                <p><i class="fa-solid fa-phone"></i> Телефон: <a href="tel:+79264206337">+7(962)420-63-37</a></p>
-            </div>
-            <div class="footer-menu">
-                <div class="footer-menu__item">
-                    <h4>Производимые материалы</h4>
-                    <ul>
-                        <li><a href="standart.html">Термопанели стандарт</a></li>
-                        <li><a href="brick.html">Термопанели под кирпич</a></li>
-                        <li><a href="brick-grid.html">Термопанели на сетке</a></li>
-                    </ul>
-                </div>
-                <div class="footer-menu__item">
-                    <h4>Услуги</h4>
-                    <ul>
-                        <li><a href="services.html">Визуализация дома</a></li>
-                        <li><a href="services.html">Шеф-монтаж</a></li>
-                    </ul>
-                </div>
-                <div class="footer-menu__item">
-                    <h4>Статьи</h4>
-                    <ul>
-                        <li><a href="base.html">Отделка цоколя</a></li>
-                        <li><a href="internal.html">Внутренняя отделка</a></li>
-                        <li><a href="external.html">Отделка фасада</a></li>
-                        <li><a href="info.html">Другие статьи</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="wrapper footer-content">
+        <div class="footer-contacts">
+          <h4>Контакты</h4>
+          <p>
+            <i class="fa-solid fa-house"></i> г. Ставрополь, ул. Заводская, 11,
+            этаж 2, офис 14
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i> Email:
+            <a href="mailto:info@26ferrum.ru">info@26ferrum.ru</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i> Телефон:
+            <a href="tel:+79264206337">+7(962)420-63-37</a>
+          </p>
         </div>
+        <div class="footer-menu">
+          <div class="footer-menu__item">
+            <h4>Производимые материалы</h4>
+            <ul>
+              <li><a href="standart.html">Термопанели стандарт</a></li>
+              <li><a href="brick.html">Термопанели под кирпич</a></li>
+              <li><a href="brick-grid.html">Термопанели на сетке</a></li>
+            </ul>
+          </div>
+          <div class="footer-menu__item">
+            <h4>Услуги</h4>
+            <ul>
+              <li><a href="services.html">Визуализация дома</a></li>
+              <li><a href="services.html">Шеф-монтаж</a></li>
+            </ul>
+          </div>
+          <div class="footer-menu__item">
+            <h4>Статьи</h4>
+            <ul>
+              <li><a href="base.html">Отделка цоколя</a></li>
+              <li><a href="internal.html">Внутренняя отделка</a></li>
+              <li><a href="external.html">Отделка фасада</a></li>
+              <li><a href="info.html">Другие статьи</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
-<!-- Footer end -->
+    <!-- Footer end -->
 
-<script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
