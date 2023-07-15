@@ -156,7 +156,7 @@ main {
 }
 .main-info img {
   width: 25%;
-  height: 350px;
+  height: 250px;
 }
 
 .main-cart {
@@ -185,6 +185,7 @@ main {
   align-self: center;
   color: #fff;
   padding-bottom: 50px;
+  text-align: center;
 }
 .main-cart__item p {
   align-self: center;

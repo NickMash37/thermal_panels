@@ -127,7 +127,7 @@ a:visited {
 }
 
 main {
-  margin-top: 180px;
+  margin-top: 120px;
   width: 100%;
   text-align: center;
 }
@@ -150,6 +150,7 @@ main h4 {
 .main-articles .article h4 {
   font-size: 1.5em;
   width: 100%;
+  margin-top: 30px;
 }
 .main-articles .article p {
   width: 90%;
