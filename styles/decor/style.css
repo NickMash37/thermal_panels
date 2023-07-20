@@ -223,29 +223,6 @@ main {
 .catalogue-item b {
   color: #3b873b;
 }
-.catalogue-item button {
-  width: 200px;
-  height: 50px;
-  background: #3b873b;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-  text-transform: uppercase;
-  align-self: center;
-  width: 40%;
-  max-height: 10%;
-  margin-top: 5px;
-}
-.catalogue-item button:hover {
-  background: #fff;
-  color: #3b873b;
-  transition: color, 0.2s ease-in-out;
-}
-.catalogue-item button:hover {
-  background-color: #2c632c;
-  color: #fff;
-}
 
 footer {
   width: 100%;
@@ -650,8 +627,10 @@ footer {
   .catalogue-item span {
     font-size: 0.8em;
   }
-  .catalogue-item button {
-    width: 80%;
+  .catalogue-item .b24-form-click-btn {
+    max-width: 80%;
+    height: 50%;
+    font-size: 0.7em;
   }
   .catalogue .rust {
     width: 100%;
