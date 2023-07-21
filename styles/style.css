@@ -442,8 +442,7 @@ main {
   transition: transform, font-size 0.2s ease-in;
 }
 .usage-item__wooden {
-  width: 100%;
-  height: 185px;
+  max-width: 76%;
 }
 
 footer {
