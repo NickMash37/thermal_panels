@@ -395,14 +395,17 @@ main {
   flex-direction: column;
 }
 .usage-item h4 {
+  width: 100%;
   text-transform: uppercase;
-  font-size: 1.1em;
+  font-size: 0.9em;
   padding: 20px 0;
   align-self: center;
+  text-align: center;
 }
 .usage-item img {
   width: 100%;
   padding: 30px 0;
+  margin: 0 auto;
 }
 .usage-item button {
   width: 200px;
@@ -437,6 +440,9 @@ main {
   color: #fff;
   transform: scale(1.1);
   transition: transform, font-size 0.2s ease-in;
+}
+.usage-item__wooden {
+  max-width: 76%;
 }
 
 footer {
