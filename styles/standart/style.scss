@@ -200,6 +200,11 @@ a:visited {
     justify-content: center;
     gap: 50px;
 
+    img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     &__text {
         display: flex; 
         flex-direction: column;
@@ -800,7 +805,7 @@ footer {
         padding: 120px 10px;
 
         img {
-            width: 40%;
+            width: 80%;
         }
 
         &__text {
@@ -1138,6 +1143,9 @@ footer {
             }
     
             .brick-grid__text {
+                width: 90%;
+                margin: 0 auto;
+
                 h4 {
                     font-size: 1.3em;
                 }
@@ -1145,6 +1153,10 @@ footer {
     
             .brick-grid__item {
                 width: 90%;
+
+                span {
+                    font-size: 0.8em;
+                }
             }
         }
     }
@@ -1159,10 +1171,11 @@ footer {
         &-item {
             width: 100%;
             text-align: center;
+            align-items: center;
 
             span {
-                font-size: 0.7em;
-                padding: 10px 0;
+                font-size: 0.6em;
+                padding: 5px 0;
             }
         }
 
@@ -1171,8 +1184,8 @@ footer {
             text-align: center;
 
             span {
-                font-size: 0.7em;
-                padding: 10px 0;
+                font-size: 0.6em;
+                padding: 5px 0;
             }
         }
     }

@@ -134,6 +134,10 @@ a:visited {
   justify-content: center;
   gap: 50px;
 }
+.main-desc img {
+  width: 100%;
+  margin: 0 auto;
+}
 .main-desc__text {
   display: flex;
   flex-direction: column;
@@ -683,7 +687,7 @@ footer {
     padding: 120px 10px;
   }
   .main-desc img {
-    width: 40%;
+    width: 80%;
   }
   .main-desc__text {
     width: 60%;
@@ -951,11 +955,18 @@ footer {
     text-align: center;
     padding: 20px;
   }
+  .info-main__text .brick-grid__text {
+    width: 90%;
+    margin: 0 auto;
+  }
   .info-main__text .brick-grid__text h4 {
     font-size: 1.3em;
   }
   .info-main__text .brick-grid__item {
     width: 90%;
+  }
+  .info-main__text .brick-grid__item span {
+    font-size: 0.8em;
   }
   .technical {
     width: 100%;
@@ -966,18 +977,19 @@ footer {
   .technical-item {
     width: 100%;
     text-align: center;
+    align-items: center;
   }
   .technical-item span {
-    font-size: 0.7em;
-    padding: 10px 0;
+    font-size: 0.6em;
+    padding: 5px 0;
   }
   .technical-value {
     width: 100%;
     text-align: center;
   }
   .technical-value span {
-    font-size: 0.7em;
-    padding: 10px 0;
+    font-size: 0.6em;
+    padding: 5px 0;
   }
   .surfaces {
     width: 100%;
