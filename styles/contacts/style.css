@@ -372,7 +372,7 @@ footer {
   .mobile-menu {
     display: block;
     position: fixed;
-    margin: 70px auto;
+    margin: 60px auto;
     background: #514e4e;
     width: 100%;
     top: 0;
@@ -412,14 +412,13 @@ footer {
   }
   .footer-content {
     width: 100%;
-    padding: 0;
     flex-direction: column;
     position: absolute;
     padding: 0 10px;
   }
   .footer-contacts {
     width: 100%;
-    padding: 0 10px;
+    padding: 20px 0;
     position: relative;
   }
   .footer-contacts p {
@@ -430,6 +429,12 @@ footer {
     width: 100%;
     flex-direction: column;
     margin: 0;
+  }
+  .footer-menu__item h4 {
+    margin: 10px 0;
+  }
+  .footer-menu__item ul li {
+    font-size: 0.9em;
   }
   .main {
     width: 100%;
