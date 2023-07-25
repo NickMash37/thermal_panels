@@ -940,7 +940,7 @@ footer {
     .mobile-menu {
         display: block;
         position: fixed;
-        margin: 70px auto;
+        margin: 60px auto;
         background: #514e4e;
         width: 100%;
         top: 0;
@@ -984,28 +984,6 @@ footer {
         }
     }
     
-    //Footer
-
-    .footer-content {
-        width: 100%;
-        padding: 0;
-    }
-
-    .footer-contacts {
-        width: 100%;
-        padding: 0 10px;
-
-            p {
-                font-size: 0.8em;
-            }
-    }
-
-    .footer-menu {
-        width: 100%;
-        flex-direction: column;
-        margin: 0;
-    }
-
     .header-menu {
         display: none;
     }
@@ -1235,26 +1213,37 @@ footer {
     }
 
     .footer-content {
-        position: absolute;
-        width: 100%;
-        padding: 0;
         flex-direction: column;
-        
-        .footer-contacts {
-            width: 100%;
-            padding: 0 10px;
+        position: absolute;
+        padding: 0 10px;
+    }
+
+.footer-contacts {
+        width: 100%;
+        padding: 20px 0;
+        position: relative;
 
             p {
                 font-size: 0.8em;
+                margin-bottom: 10px;
             }
-        }
     }
 
     .footer-menu {
         width: 100%;
-        height: 100%;
         flex-direction: column;
         margin: 0;
-        padding: 0 10px;
+
+        &__item {
+            h4 {
+                margin: 10px 0;
+            }
+
+            ul {
+                li {
+                    font-size: 0.9em;
+                }
+            }
+        }
     }
 }
