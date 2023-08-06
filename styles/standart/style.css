@@ -133,13 +133,15 @@ a:visited {
   display: flex;
   justify-content: center;
   gap: 50px;
+  margin: 0 auto;
 }
 .main-desc img {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
 }
 .main-desc__text {
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   width: 30%;
   justify-content: space-around;
