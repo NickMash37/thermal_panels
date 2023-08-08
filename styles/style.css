@@ -118,7 +118,6 @@ a:visited {
 .header-menu__contacts {
   display: flex;
   flex-direction: column;
-  text-align: center;
   gap: 0.5em;
 }
 .header-menu__contacts span a {
