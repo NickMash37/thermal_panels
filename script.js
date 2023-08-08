@@ -3,8 +3,6 @@ const mobileMenu = document.querySelector('.mobile-menu')
 const firstLevelMenuItem = document.querySelectorAll('.mobile-item')
 const caretDown = document.querySelectorAll('.fa-caret-down')
 
-console.log(caretDown);
-
 burger.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden')
 })
