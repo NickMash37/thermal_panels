@@ -27,4 +27,4 @@ btnClose.addEventListener('click', () => {
 setTimeout(() => {
     overlay.classList.remove('disabled');
     popup.classList.remove('disabled');
-}, 5000)
+}, 60000)

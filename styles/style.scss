@@ -73,26 +73,6 @@ a:visited {
     color: inherit;
 }
 
-// Animations
-
-@keyframes rotate {
-    0% {
-        background-color: #000;
-        border: 1px solid;
-        border-color: #275d27;
-    }
-    50% {
-        background-color: #3b873b;
-        border: 1px solid;
-        border-color: #3b873b;
-    }
-    100% {
-        background-color: #275d27;
-        border: 1px solid;
-        border-color: #000;
-    }
-}
-
 // Header styles start
 
 .hidden {
@@ -207,6 +187,22 @@ a:visited {
                     &:hover {
                         @include hovered-link()
                     }
+                }
+            }
+        }
+
+        &__socials {
+            display: flex;
+            gap: 0.4em;
+
+            img {
+                height: 30px;
+                width: 30px;
+            }
+
+            span {
+                a {
+                    text-decoration: none;
                 }
             }
         }
@@ -587,7 +583,6 @@ main {
                 color: #fff;
                 transform: scale(1.1);
                 transition: transform, font-size .2s ease-in;
-                animation: rotate .2s;
             }
         }
         
@@ -652,6 +647,47 @@ main {
 
 .disabled {
     display: none;
+}
+
+.socials {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+
+    h4 {
+        text-transform: uppercase;
+        margin: 40px auto;
+        font-size: 2em;
+        color: #514e4e;
+    }
+
+    &-links {
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    
+    &:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 50%;
+        margin: 30px auto;
+        background-color: #275d27;
+    }
 }
 
 // Main styles end
