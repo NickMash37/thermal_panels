@@ -669,6 +669,13 @@ footer {
   .mobile-menu .second-level-menu li {
     font-size: 0.8em;
   }
+  .popup button {
+    top: 5%;
+    right: 10%;
+  }
+  .popup h4 {
+    margin: 2em auto;
+  }
   .footer-content {
     flex-direction: column;
     position: absolute;
