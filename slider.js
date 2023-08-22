@@ -9,11 +9,8 @@ jQuery(document).ready(($) => {
             0: {
                 items: 2
             },
-            600: {
-                items: 3
-            },
             1000: {
-                items: 5
+                items: 4
             }
         }
     });
