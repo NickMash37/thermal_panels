@@ -166,6 +166,10 @@ a:visited {
         }
 
         &__contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            
             span {
                 a {
                     @include standart-link();
@@ -174,6 +178,22 @@ a:visited {
                     &:hover {
                         @include hovered-link()
                     }
+                }
+            }
+        }
+
+        &__socials {
+            display: flex;
+            gap: 0.4em;
+
+            img {
+                height: 30px;
+                width: 30px;
+            }
+
+            span {
+                a {
+                    text-decoration: none;
                 }
             }
         }
@@ -628,6 +648,47 @@ a:visited {
 
     p {
         text-align: center;
+    }
+}
+
+.socials {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+
+    h4 {
+        text-transform: uppercase;
+        margin: 40px auto;
+        font-size: 2em;
+        color: #514e4e;
+    }
+
+    &-links {
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    
+    &:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 50%;
+        margin: 30px auto;
+        background-color: #275d27;
     }
 }
 
@@ -1213,13 +1274,37 @@ footer {
         }
     }
 
+    .socials {
+        width: 90%;
+
+        h4 {
+            font-size: 1.5em;
+        }
+
+        &-links {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+
+            a {
+                img {
+                    width: 50px;
+                }                
+            }
+
+        }
+
+    }
+
+    // Footer
+
     .footer-content {
         flex-direction: column;
         position: absolute;
         padding: 0 10px;
     }
 
-.footer-contacts {
+    .footer-contacts {
         width: 100%;
         padding: 20px 0;
         position: relative;
