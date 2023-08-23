@@ -493,7 +493,7 @@ main {
   gap: 30px;
 }
 .usage-item {
-  width: 20%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -1052,11 +1052,20 @@ footer {
     width: 100%;
     align-items: center;
   }
+  .usage h4 {
+    margin-bottom: 0.5em;
+    height: 70px;
+  }
   .usage-item {
-    width: 80%;
+    width: 100%;
+    padding: 5%;
   }
   .usage-item button {
     margin: 10px 0;
+  }
+  .usage-item img {
+    height: 100%;
+    width: 100%;
   }
   .popup button {
     top: 5%;
