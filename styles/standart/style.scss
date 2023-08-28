@@ -166,6 +166,10 @@ a:visited {
         }
 
         &__contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            
             span {
                 a {
                     @include standart-link();
@@ -174,6 +178,22 @@ a:visited {
                     &:hover {
                         @include hovered-link()
                     }
+                }
+            }
+        }
+
+        &__socials {
+            display: flex;
+            gap: 0.4em;
+
+            img {
+                height: 30px;
+                width: 30px;
+            }
+
+            span {
+                a {
+                    text-decoration: none;
                 }
             }
         }
@@ -194,21 +214,14 @@ a:visited {
 // Main styles
 
 .main-desc {
-    padding-top: 200px;
+    padding-top: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin: 0 auto;
-
-    img {
-        width: 40%;
-        margin: 0 auto;
-    }
 
     &__text {
-        display: flex;
-        margin: 0 auto;
+        display: flex; 
         flex-direction: column;
         width: 30%;
         justify-content: space-around;   
@@ -363,12 +376,12 @@ a:visited {
             text-transform: uppercase;
             text-align: center;
             width: 100%;
-            font-size: 2em;
+            font-size: 1.4em;
             margin-bottom: 50px;
         }
 
     &-item {
-            width: 25%;
+            width: 23%;
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -376,14 +389,15 @@ a:visited {
             margin-bottom: 40px;
 
             img {
-                width: 80%;
+                width: 60%;
             }
 
             h4 {
                 text-transform: uppercase;
                 text-align: center;
                 margin: 15px 0;
-                font-size: 1.3em;
+                font-size: 1.1em;
+                width: 60%;
             }
 
             button {
@@ -428,18 +442,19 @@ a:visited {
     width: 80%;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 20px;
     margin: 150px auto 20px;
     align-items: center;
 
     &__text {
         display: flex;
         flex-wrap: wrap;
+        width: 50%;
 
         h4 {
             text-transform: uppercase;
             width: 100%;
-            padding: 50px 0;
+            padding: 20px 0;
             font-size: 1.3em;
         }
 
@@ -450,9 +465,10 @@ a:visited {
             row-gap: 30px;
             text-align: left;
             font-weight: 700;
+            max-width: 80%;
 
             li {
-                padding: 15px 30px;
+                padding: 15px 10px;
                 background-color: #a5a0a0;
                 margin-right: 50px;
                 border-radius: 10px;
@@ -563,7 +579,7 @@ a:visited {
         gap: 20px;
 
         img {
-            width: 100%;
+            width: 25%;
         }
     }
 }
@@ -632,6 +648,47 @@ a:visited {
 
     p {
         text-align: center;
+    }
+}
+
+.socials {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+
+    h4 {
+        text-transform: uppercase;
+        margin: 40px auto;
+        font-size: 2em;
+        color: #514e4e;
+    }
+
+    &-links {
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    
+    &:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 50%;
+        margin: 30px auto;
+        background-color: #275d27;
     }
 }
 
@@ -808,6 +865,7 @@ footer {
 
         img {
             width: 80%;
+            margin: 10px auto;
         }
 
         &__text {
@@ -857,7 +915,8 @@ footer {
             width: 24%;
 
             h4 {
-                font-size: 1em;
+                font-size: 0.9em;
+                width: 100%;
             }
 
             p {
@@ -875,7 +934,7 @@ footer {
     }
 
     .info-main {
-        width: 100%;
+        width: 50%;
 
         &__img {
             width: 50%;
@@ -991,32 +1050,6 @@ footer {
         }
     }
     
-    //Footer
-
-    .footer-content {
-        width: 100%;
-        padding: 0;
-    }
-
-    .footer-contacts {
-        width: 100%;
-        padding: 0 10px;
-
-            p {
-                font-size: 0.8em;
-            }
-    }
-
-    .footer-menu {
-        width: 100%;
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .header-menu {
-        display: none;
-    }
-
     // Main
 
     .main-desc {
@@ -1145,20 +1178,13 @@ footer {
             }
     
             .brick-grid__text {
-                width: 90%;
-                margin: 0 auto;
-
                 h4 {
                     font-size: 1.3em;
                 }
             }
     
             .brick-grid__item {
-                width: 90%;
-
-                span {
-                    font-size: 0.8em;
-                }
+                width: 50%;
             }
         }
     }
@@ -1173,11 +1199,10 @@ footer {
         &-item {
             width: 100%;
             text-align: center;
-            align-items: center;
 
             span {
-                font-size: 0.6em;
-                padding: 5px 0;
+                font-size: 0.7em;
+                padding: 10px 0;
             }
         }
 
@@ -1186,8 +1211,8 @@ footer {
             text-align: center;
 
             span {
-                font-size: 0.6em;
-                padding: 5px 0;
+                font-size: 0.7em;
+                padding: 10px 0;
             }
         }
     }
@@ -1248,6 +1273,30 @@ footer {
             width: 80%;
         }
     }
+
+    .socials {
+        width: 90%;
+
+        h4 {
+            font-size: 1.5em;
+        }
+
+        &-links {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+
+            a {
+                img {
+                    width: 50px;
+                }                
+            }
+
+        }
+
+    }
+
+    // Footer
 
     .footer-content {
         flex-direction: column;
