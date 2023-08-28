@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/gallery/owl.carousel.min.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -114,35 +115,33 @@
         <div class="main-image">
             <img src="img/main-section.jpg" alt="Main image">
         </div>
-        <div class="main-info">
-            <img src="./img/standart-panel.jpg" alt="" class="main-info__item">
-            <img src="./img/brick-panel.jpg" alt="" class="main-info__item">
-            <img src="./img/flexible-brick.jpg" alt="" class="main-info__item">
-            <img src="./img/materials.jpg" alt="" class="main-info__item">
-        </div>
 
-        
-        <div class="main-cart">
-            <div class="main-cart__item">
-                <h3>Термопанели стандарт</h3>
-                <p>Идеальное соотношение цены и качества, Термопанели колеруются в любой цвет. Производятся из пенополистирола повышенной плотности, песка, мрамора и полимеров.</p>
-                <button><a href="standart">Подробнее</a></button>
+        <div class="main-slider">
+            <div class="slider owl-carousel">
+                    <div class="slider-item">
+                        <img src="./img/standart-panel.jpg" alt="" class="main-info__item">
+                        <h3>Термопанели стандарт</h3>
+                        <p>Идеальное соотношение цены и качества, Термопанели колеруются в любой цвет. Производятся из пенополистирола повышенной плотности, песка, мрамора и полимеров.</p>
+                        <button><a href="standart">Подробнее</a></button>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/brick-panel.jpg" alt="" class="main-info__item">
+                        <h3>Термопанели под кирпич</h3>
+                        <p>Термопанели под кирпич одновременно выполняют функцию по утеплению дома и внешнему декору здания, к тому же выгоднее в сравнении с другими видами отделки фасада.</p>
+                        <button><a href="brick">Подробнее</a></button>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/flexible-brick.jpg" alt="" class="main-info__item">
+                        <h3>Кирпич на сетке</h3>
+                        <p>Внешне неотличим от клинкера, есть возможность колеровать в любой цвет или же сделать уникальный дизайн, толщина кирпича 3мм., после затирки выглядит, как натуральный кирпич. Разные виды кирпичной кладки</p>
+                        <button><a href="brick-grid">Подробнее</a></button>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/materials.jpg" alt="" class="main-info__item">
+                        <h3>Материалы для монтажа</h3>
+                        <p>Профессиональная серия крепежа и дополнительных материалов для монтажа термопанелей. Вам не нужно ездить по магазинам в поисках всего необходимого, все приедет в одной машине.</p>
+                    </div>                
             </div>
-            <div class="main-cart__item">
-                <h3>Термопанели под кирпич</h3>
-                <p>Термопанели под кирпич одновременно выполняют функцию по утеплению дома и внешнему декору здания, к тому же выгоднее в сравнении с другими видами отделки фасада.</p>
-                <button><a href="brick">Подробнее</a></button>
-            </div>
-            <div class="main-cart__item">
-                <h3>Кирпич на сетке</h3>
-                <p>Внешне неотличим от клинкера, есть возможность колеровать в любой цвет или же сделать уникальный дизайн, толщина кирпича 3мм., после затирки выглядит, как натуральный кирпич. Разные виды кирпичной кладки</p>
-                <button><a href="brick-grid">Подробнее</a></button>
-            </div>
-            <div class="main-cart__item">
-                <h3>Материалы для монтажа</h3>
-                <p>Профессиональная серия крепежа и дополнительных материалов для монтажа термопанелей. Вам не нужно ездить по магазинам в поисках всего необходимого, все приедет в одной машине.</p>
-            </div>
-        </div>
 
 
         <div class="main-advantage wrapper">
@@ -216,25 +215,27 @@
             <h3>Наши отделочные материалы имеют широкий спектр применения</h3>
 
             <div class="usage">
-                <div class="usage-item">
-                    <h4>Отделка цоколя</h4>
-                    <img src="./img/usage1.jpg" alt="">
-                    <button type="button"><a href="base">Подробнее</a></button>
-                </div>
-                <div class="usage-item">
-                    <h4>Наружная отделка</h4>
-                    <img src="./img/usage2.jpg" alt="">
-                    <button type="button"><a href="external">Подробнее</a></button>
-                </div>
-                <div class="usage-item">
-                    <h4>Внутренняя отделка</h4>
-                    <img src="./img/usage3.jpg" alt="">
-                    <button type="button"><a href="internal">Подробнее</a></button>
-                </div>
-                <div class="usage-item">
-                    <h4>Отделка деревянного дома</h4>
-                    <img src="./img/info/wooden-house.jpg" alt="" class="usage-item__wooden">
-                    <button type="button"><a href="wooden">Подробнее</a></button>
+                <div class="slider owl-carousel">
+                    <div class="usage-item">
+                        <h4>Отделка цоколя</h4>
+                        <img src="./img/usage1.jpg" alt="">
+                        <button type="button"><a href="base">Подробнее</a></button>
+                    </div>
+                    <div class="usage-item">
+                        <h4>Наружная отделка</h4>
+                        <img src="./img/usage2.jpg" alt="">
+                        <button type="button"><a href="external">Подробнее</a></button>
+                    </div>
+                    <div class="usage-item">
+                        <h4>Внутренняя отделка</h4>
+                        <img src="./img/usage3.jpg" alt="">
+                        <button type="button"><a href="internal">Подробнее</a></button>
+                    </div>
+                    <div class="usage-item">
+                        <h4>Отделка деревянного дома</h4>
+                        <img src="./img/info/wooden-house.jpg" alt="" class="usage-item__wooden">
+                        <button type="button"><a href="wooden">Подробнее</a></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -285,6 +286,9 @@
 
 <!-- Footer end -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script src="slider.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
