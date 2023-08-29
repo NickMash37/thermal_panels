@@ -861,7 +861,7 @@ footer {
   .mobile-menu {
     display: block;
     position: fixed;
-    margin: 70px auto;
+    margin: 60px auto;
     background: #514e4e;
     width: 100%;
     top: 0;
@@ -1045,6 +1045,7 @@ footer {
   }
   .main-usage h3 {
     font-size: 0.9em;
+    margin-bottom: 0.5em;
   }
   .usage {
     display: flex;
