@@ -491,6 +491,7 @@ main {
   background: #b0b0b0;
   justify-content: center;
   gap: 30px;
+  padding: 0 10px;
 }
 .usage-item {
   width: 100%;
@@ -1045,6 +1046,7 @@ footer {
   }
   .main-usage h3 {
     font-size: 0.9em;
+    margin-bottom: 0.5em;
   }
   .usage {
     display: flex;
