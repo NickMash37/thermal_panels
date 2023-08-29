@@ -1,13 +1,10 @@
 const burger = document.querySelector('.burger')
 const mobileMenu = document.querySelector('.mobile-menu')
 const firstLevelMenuItem = document.querySelectorAll('.mobile-item')
-const secondLevelMenu = document.querySelectorAll('.second-level-menu')
-const faqHeader = document.querySelectorAll('.faq-header')
-const faqText = document.querySelectorAll('.faq-text')
-const faqItem = document.querySelectorAll('.faq-items__item')
 const caretDown = document.querySelectorAll('.fa-caret-down')
-
-console.log(caretDown);
+const btnClose = document.querySelector('.popup-text__btn')
+const overlay = document.querySelector('.overlay')
+const popup = document.querySelector('.popup')
 
 burger.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden')
@@ -21,3 +18,13 @@ firstLevelMenuItem.forEach((item) => {
         })
     }
 })
+
+btnClose.addEventListener('click', () => {
+    overlay.classList.add('disabled')
+    popup.classList.add('disabled')
+})
+
+setTimeout(() => {
+    overlay.classList.remove('disabled');
+    popup.classList.remove('disabled');
+}, 60000)
