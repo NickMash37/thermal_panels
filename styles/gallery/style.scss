@@ -160,6 +160,10 @@ a:visited {
         }
 
         &__contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+
             span {
                 a {
                     @include standart-link();
@@ -168,6 +172,22 @@ a:visited {
                     &:hover {
                         @include hovered-link()
                     }
+                }
+            }
+        }
+
+        &__socials {
+            display: flex;
+            gap: 0.4em;
+
+            img {
+                height: 30px;
+                width: 30px;
+            }
+
+            span {
+                a {
+                    text-decoration: none;
                 }
             }
         }
@@ -196,7 +216,7 @@ h3 {
 }
 
 .main-header {
-    padding-top: 200px;
+    padding-top: 150px;
     text-align: center;
 
     h2 {
@@ -226,8 +246,7 @@ h3 {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding: 10px 0;
-    margin: 30px auto;
+    margin: auto;
 
 
     .slider {
@@ -315,6 +334,47 @@ h3 {
         font-size: 1em;
         font-weight: 400;
         letter-spacing: 0.025em;
+    }
+}
+
+.socials {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+
+    h4 {
+        text-transform: uppercase;
+        margin: 40px auto;
+        font-size: 2em;
+        color: #514e4e;
+    }
+
+    &-links {
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    
+    &:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 50%;
+        margin: 30px auto;
+        background-color: #275d27;
     }
 }
 
@@ -547,7 +607,7 @@ footer {
     .mobile-menu {
         display: block;
         position: fixed;
-        margin: 70px auto;
+        margin: 60px auto;
         background: #514e4e;
         width: 100%;
         top: 0;
@@ -589,6 +649,28 @@ footer {
                 font-size: 0.8em;
             }
         }
+    }
+
+    .socials {
+        width: 90%;
+
+        h4 {
+            font-size: 1.5em;
+        }
+
+        &-links {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+
+            a {
+                img {
+                    width: 50px;
+                }                
+            }
+
+        }
+
     }
 
     .footer-content {
