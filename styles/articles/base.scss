@@ -841,7 +841,7 @@ footer {
         padding: 0 10px;
     }
 
-.footer-contacts {
+    .footer-contacts {
         width: 100%;
         padding: 20px 0;
         position: relative;
@@ -988,6 +988,28 @@ footer {
             flex-direction: column;
             align-items: center;
             gap: 20px;
+        }
+
+        .socials {
+            width: 90%;
+    
+            h4 {
+                font-size: 1.5em;
+            }
+    
+            &-links {
+                width: 80%;
+                display: flex;
+                justify-content: center;
+    
+                a {
+                    img {
+                        width: 50px;
+                    }                
+                }
+    
+            }
+    
         }
     }
 }

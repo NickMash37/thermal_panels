@@ -792,6 +792,20 @@ footer {
     align-items: center;
     gap: 20px;
   }
+  main .socials {
+    width: 90%;
+  }
+  main .socials h4 {
+    font-size: 1.5em;
+  }
+  main .socials-links {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  main .socials-links a img {
+    width: 50px;
+  }
 }
 
 /*# sourceMappingURL=base.css.map */
