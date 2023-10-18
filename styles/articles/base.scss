@@ -835,6 +835,28 @@ footer {
         }
     }
 
+    .socials {
+        width: 90%;
+
+        h4 {
+            font-size: 1.5em;
+        }
+
+        &-links {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+
+            a {
+                img {
+                    width: 50px;
+                }                
+            }
+
+        }
+
+    }
+
     .footer-content {
         flex-direction: column;
         position: absolute;
