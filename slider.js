@@ -15,3 +15,18 @@ jQuery(document).ready(($) => {
         }
     });
 })
+
+// Main image slider
+
+jQuery(document).ready(($) => {
+    $('.image-slider').owlCarousel({
+        items: 1,
+        margin: 0,
+        nav: false,
+        loop: true,
+        dost: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        smartSpeed: 500
+    })
+})
